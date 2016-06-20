@@ -1,0 +1,134 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | SMS {% endblock %}
+
+{% block extrastyle %}
+    <style>
+    #header
+    {
+        background: #FFC000;
+
+    }
+
+    .module caption, .inline-group h2
+    {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        background: #3f3f3f;
+    }
+
+
+
+    #user-tools a:focus, #user-tools a:hover {
+    text-decoration: #fafafa;
+    border-bottom-color: #fafafa;
+    color: #fafafa;
+}
+
+
+    div.breadcrumbs {
+    background: #3f3f3f;
+    padding: 10px 40px;
+    border: none;
+    font-size: 14px;
+    color: #c4dce8;
+    text-align: left;
+}
+
+
+    a:focus, a:hover
+    {
+        color: #FFC500;
+    }
+
+
+    a:link, a:visited
+    {
+        color: #6c6c6c;
+        text-decoration: none;
+    }
+
+
+    .button, input[type=submit], input[type=button], .submit-row input, a.button {
+        background: #FFC500;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+
+
+    .object-tools a:focus, .object-tools a:hover
+    {
+        background-color: #FFC500;
+    }
+
+
+
+    #changelist-filter h2
+    {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 5px 15px;
+        margin-bottom: 12px;
+        border-bottom: none;
+        background: #6c6c6c;
+    }
+
+    .button.default, input[type=submit].default, .submit-row input.default
+    {
+        float: right;
+        border: none;
+        font-weight: 400;
+        background: #6c6c6c;
+    }
+
+    .button:active, input[type=submit]:active, input[type=button]:active,
+    .button:focus, input[type=submit]:focus, input[type=button]:focus,
+    .button:hover, input[type=submit]:hover, input[type=button]:hover
+    {
+        background: #6F6F6F;
+    }
+
+    .button.default:active, input[type=submit].default:active,
+    .button.default:focus, input[type=submit].default:focus,
+    .button.default:hover, input[type=submit].default:hover
+    {
+        background: #afafaf;
+    }
+
+
+
+    #header a:link, #header a:visited
+    {
+        color: #fafafa;
+    }
+
+    #branding h1, #branding h1 a:link, #branding h1 a:visited
+    {
+        color: #fafafa;
+    }
+
+
+    </style>
+{% endblock %}
+
+
+{% block footer %}
+
+    </br></br></br>
+   <a class="submit-row" href="/home">Torna alla home </a>
+
+{% endblock %}
+
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">SMS CENTER Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
